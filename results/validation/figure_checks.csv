@@ -1,0 +1,71 @@
+figure,check,expected,observed,passed
+Figure 1,facilities x occasions,4 x 8,4 x [8],True
+Figure 1,facility-date rows without missing environment,32,32,True
+Figure 2,facility-date means entering the correlation,32,32,True
+Figure 2,variable order,"['log_weight', 'DO', 'Temperature', 'Salinity', 'pH']","['log_weight', 'DO', 'Temperature', 'Salinity', 'pH']",True
+Figure 2,"r(log_weight, DO) at 3 decimals",-0.041,-0.041,True
+Figure 2,"r(log_weight, Temperature) at 3 decimals",0.259,0.259,True
+Figure 2,"r(log_weight, Salinity) at 3 decimals",0.442,0.442,True
+Figure 2,"r(log_weight, pH) at 3 decimals",0.197,0.197,True
+Figure 2,"r(DO, Temperature) at 3 decimals",-0.622,-0.622,True
+Figure 2,"r(DO, Salinity) at 3 decimals",0.310,0.310,True
+Figure 2,"r(DO, pH) at 3 decimals",0.465,0.465,True
+Figure 2,"r(Temperature, Salinity) at 3 decimals",-0.281,-0.281,True
+Figure 2,"r(Temperature, pH) at 3 decimals",-0.365,-0.365,True
+Figure 2,"r(Salinity, pH) at 3 decimals",0.847,0.847,True
+Figure 3,months,2024-04 ... 2024-11 (8),2024-04 ... 2024-11 (8),True
+Figure 3,individual observations (positive weights),960,960,True
+Figure 3,observations per facility,,Wando-Geumhae 240; Wando-Mingug 240; Jindo-Gaban 240; Jindo-Daru 240,True
+Figure 3,facility x month cells (all with >= 2 values for the KDE),32,"32 (min 30, max 30)",True
+Figure 1,no figure or panel title,,,True
+Figure 1,legend order,"['Wando-Geumhae', 'Wando-Mingug', 'Jindo-Gaban', 'Jindo-Daru']","['Wando-Geumhae', 'Wando-Mingug', 'Jindo-Gaban', 'Jindo-Daru']",True
+Figure 1,facility names hyphenated,no underscore names,none,True
+Figure 2,no figure or panel title,,,True
+Figure 2,facility names hyphenated,no underscore names,none,True
+Figure 3,no figure or panel title,,,True
+Figure 3,legend order,"['Wando-Geumhae', 'Wando-Mingug', 'Jindo-Gaban', 'Jindo-Daru']","['Wando-Geumhae', 'Wando-Mingug', 'Jindo-Gaban', 'Jindo-Daru']",True
+Figure 3,facility names hyphenated,no underscore names,none,True
+Figure 3,y-axis label,log_weight,log_weight,True
+Figure 4,redraw equals the published PNG (pixels),True,True,True
+Figure 4,no overall figure title,,,True
+Figure 4,no 'conformal' or 'gamma_0' in drawn text,none,none,True
+Figure 4,no 'conformal' or 'gamma_0' in PDF text,none,none,True
+Figure 5,redraw equals the published PNG (pixels),True,True,True
+Figure 5,no overall figure title,,,True
+Figure 5,no 'conformal' or 'gamma_0' in drawn text,none,none,True
+Figure 5,no 'conformal' or 'gamma_0' in PDF text,none,none,True
+Figure 6,redraw equals the published PNG (pixels),True,True,True
+Figure 6,no overall figure title,,,True
+Figure 6,no 'conformal' or 'gamma_0' in drawn text,none,none,True
+Figure 6,no 'conformal' or 'gamma_0' in PDF text,none,none,True
+Figure 4,Matern0.5: plotted points = standardised residuals,24 points,"24 points, max gap 0.0e+00",True
+Figure 4,Matern0.5: Shapiro-Wilk annotation,"W = 0.964, p = 0.534","Shapiro–Wilk (n = 24) W = 0.964, p = 0.534",True
+Figure 4,"Matern0.5: Shapiro-Wilk W, p (full precision)",,"W = 0.9644440604, p = 0.5339352335, n = 24",True
+Figure 4,RBF_add3: plotted points = standardised residuals,24 points,"24 points, max gap 0.0e+00",True
+Figure 4,RBF_add3: Shapiro-Wilk annotation,"W = 0.956, p = 0.365","Shapiro–Wilk (n = 24) W = 0.956, p = 0.365",True
+Figure 4,"RBF_add3: Shapiro-Wilk W, p (full precision)",,"W = 0.9561135950, p = 0.3654113010, n = 24",True
+Figure 4,NNKernel: plotted points = standardised residuals,24 points,"24 points, max gap 0.0e+00",True
+Figure 4,NNKernel: Shapiro-Wilk annotation,"W = 0.950, p = 0.270","Shapiro–Wilk (n = 24) W = 0.950, p = 0.270",True
+Figure 4,"NNKernel: Shapiro-Wilk W, p (full precision)",,"W = 0.9499330569, p = 0.2700444687, n = 24",True
+Figure 5,"'Native 80%' endpoints = interval calculation (Native_low_g, Native_high_g)","8 rows, |gap| <= 1e-10","8 rows, max gap 0.0e+00",True
+Figure 5,"'Residual-calibrated 80%' endpoints = interval calculation (Conformal_low_g, Conformal_high_g)","8 rows, |gap| <= 1e-10","8 rows, max gap 0.0e+00",True
+Figure 5,mean width reduction = interval calculation (ALL),mean width reduction 26.6%,['mean width reduction 26.6%'],True
+Figure 5,covered observations = interval calculation,7/8,7/8,True
+Figure 5,legend,"Native 80%, Residual-calibrated 80%, Observed ...","['Native 80%', 'Residual-calibrated 80%', 'Observed (covered)', 'Observed (not covered)']",True
+Figure 6,mixture CDF at the plotted median,0.5 +/- 1e-6,max |F - 0.5| = 6.7e-16,True
+Figure 6,band radius (z) = calibrated interval radius,0.288026001637,max gap 4.4e-16,True
+Figure 6,Wando-Geumhae: line = stacked predictive mixture median,|gap| <= 1e-10 g,max gap 0.0e+00 g,True
+Figure 6,Wando-Geumhae: band centre (z) = plotted median,|gap| <= 1e-9,max gap 6.7e-16 on 29 of 29 nodes (0 lower ends clipped at the axis),True
+Figure 6,Wando-Mingug: line = stacked predictive mixture median,|gap| <= 1e-10 g,max gap 0.0e+00 g,True
+Figure 6,Wando-Mingug: band centre (z) = plotted median,|gap| <= 1e-9,max gap 1.1e-15 on 29 of 29 nodes (0 lower ends clipped at the axis),True
+Figure 6,Jindo-Gaban: line = stacked predictive mixture median,|gap| <= 1e-10 g,max gap 0.0e+00 g,True
+Figure 6,Jindo-Gaban: band centre (z) = plotted median,|gap| <= 1e-9,max gap 6.7e-16 on 29 of 29 nodes (0 lower ends clipped at the axis),True
+Figure 6,Jindo-Daru: line = stacked predictive mixture median,|gap| <= 1e-10 g,max gap 0.0e+00 g,True
+Figure 6,Jindo-Daru: band centre (z) = plotted median,|gap| <= 1e-9,max gap 4.4e-16 on 25 of 29 nodes (4 lower ends clipped at the axis),True
+Figure 6,legend,"['80% residual-calibrated interval', 'Stacking (median)', 'Train / test boundary', 'Train (observed)', 'Test (observed)']","['80% residual-calibrated interval', 'Stacking (median)', 'Train / test boundary', 'Train (observed)', 'Test (observed)']",True
+Figure 1,Figure1.py (separate process) = reproduce_all.py,identical PNG pixels and PDF bytes (except CreationDate),"PNG True, PDF True",True
+Figure 2,Figure2.py (separate process) = reproduce_all.py,identical PNG pixels and PDF bytes (except CreationDate),"PNG True, PDF True",True
+Figure 3,Figure3.py (separate process) = reproduce_all.py,identical PNG pixels and PDF bytes (except CreationDate),"PNG True, PDF True",True
+Figure 4,Figure4.py (separate process) = reproduce_all.py,identical PNG pixels and PDF bytes (except CreationDate),"PNG True, PDF True",True
+Figure 5,Figure5.py (separate process) = reproduce_all.py,identical PNG pixels and PDF bytes (except CreationDate),"PNG True, PDF True",True
+Figure 6,Figure6.py (separate process) = reproduce_all.py,identical PNG pixels and PDF bytes (except CreationDate),"PNG True, PDF True",True

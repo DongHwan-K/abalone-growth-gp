@@ -1,0 +1,62 @@
+﻿section,item,value,printed
+3.1,"Shapiro–Wilk p, Matérn(ν = 1/2)",0.5339352334559722,0.534
+3.1,"Shapiro–Wilk p, Group-additive SE",0.36541130095683877,0.365
+3.1,"Shapiro–Wilk p, Neural network",0.2700444687304884,0.270
+3.1,Stacking vs group-additive SE: RMSE reduction (g),0.05287719320388096,0.053
+3.1,Stacking vs group-additive SE: MAE reduction (g),0.09552416332755387,0.096
+3.1,Stacking vs group-additive SE: MAPE reduction (percentage points),0.7672648723261233,0.77
+3.1,Individual GP candidates: lowest MAPE (%),15.054757047490408,15.05
+3.1,Individual GP candidates: highest MAPE (%),27.39969431339393,27.40
+3.1,von Bertalanffy minus stacking: MAPE (percentage points),8.969448123577532,8.97
+3.1,von Bertalanffy minus stacking: RMSE (g),0.9002517097190503,0.90
+3.1,Last / preceding training mean weight: lowest facility ratio,1.2374777975133215,1.24
+3.1,Last / preceding training mean weight: highest facility ratio,1.4747589336358482,1.47
+3.1,Jindo-Daru: von Bertalanffy asymptote (g),155.387695792479,155
+3.1,Jindo-Daru: von Bertalanffy asymptote standard error (g),2758.8964579736603,2759
+3.1,Jindo-Daru: training maximum mean weight (g),2.6,2.60
+3.1,Jindo-Daru: Gompertz asymptote (g),2.8068866826832015,2.807
+3.1,Jindo-Daru: Gompertz asymptote standard error (g),0.04898573975550532,0.049
+3.1,Jindo-Daru: Gompertz asymptote / training maximum,1.0795718010320006,1.08
+3.1,Jindo-Daru: Gompertz facility MAPE (%),56.55500666787452,56.56
+3.1,"Jindo-Daru: observed test mean weight, t7 (g)",5.003,5.00
+3.1,"Jindo-Daru: observed test mean weight, t8 (g)",8.867,8.87
+3.1,Bayesian ridge minus von Bertalanffy: MAPE (percentage points),12.851533857037296,12.85
+3.1,"Table 3 footnote, Jindo-Daru: von Bertalanffy asymptote relative standard error",17.754922253678178,17.8
+3.2,Native 80% interval: test observations covered,8/8,8/8
+3.2,Native 80% interval: mean width (g),6.572218479278382,6.57
+3.2,Residual-calibrated 80% interval: mean width (g),4.824358844526678,4.82
+3.2,Reduction of the mean width (%),26.594667238506286,26.6
+3.2,Residual-calibrated 80% interval: test observations covered,7/8,7/8
+3.2,Residual-calibrated 80% interval: empirical coverage (%),87.5,87.5
+3.2,"Mean per-sample width reduction, t7 (%)",11.493962011994164,11.5
+3.2,"Mean per-sample width reduction, t8 (%)",35.43677349168044,35.4
+3.4,"Stacking weight, Group-additive SE",0.43612064803971534,0.4361
+3.4,"Stacking weight, Neural network",0.40740794956495174,0.4074
+3.4,"Stacking weight, Matérn(ν = 1/2)",0.15647140239533291,0.1565
+3.4,Effective number of components,2.767578533100954,2.7676
+3.4,MAPE increase without Neural network (percentage points),2.5585710085109525,2.56
+3.4,MAPE increase without Matérn(ν = 1/2) (percentage points),1.0184802469947964,1.02
+3.4,MAPE increase without Group-additive SE (percentage points),0.9618082827504537,0.96
+3.4,Without environmental covariates: stacking MAPE increase (percentage points),4.646854622752148,4.65
+3.4,Without environmental covariates: Matérn(ν = 1/2) candidate MAPE increase (percentage points),0.48067556523438526,0.48
+3.4,Without environmental covariates: Group-additive SE candidate MAPE increase (percentage points),1.9011691194180216,1.90
+3.4,Without environmental covariates: Neural network candidate MAPE increase (percentage points),7.748065163936989,7.75
+3.4,Without environmental covariates: Neural network weight,0.0,0.0000
+3.4,Without environmental covariates: effective number of components,1.78263929776885,1.7826
+3.4,Without environmental covariates: stacking MAPE (%),18.934346797916433,18.9343
+3.4,Without environmental covariates: group-additive SE candidate MAPE (%),16.95592616690843,16.9559
+3.4,"Residual-calibrated 80% mean width, proposed (g)",4.824358844526678,4.8244
+3.4,"Residual-calibrated 80% mean width, without environmental covariates (g)",5.338517434569946,5.3385
+3.4,"Residual-calibrated 80% test observations covered, proposed",7/8,7/8
+3.4,"Residual-calibrated 80% test observations covered, without environmental covariates",6/8,6/8
+3.4,Equal weights: stacking MAPE increase (percentage points),1.2759574319834286,1.28
+3.4,"LOO mixture log predictive density (grams), estimated weights",0.003213541769592062,+0.0032
+3.4,"LOO mixture log predictive density (grams), equal weights",-0.0069947727262298365,-0.0070
+3.4,Equal weights: residual-calibrated 80% test observations covered,6/8,6/8
+3.4,Direct-response GP MAPE / proposed MAPE,3.4007209600462898,3.40
+3.4,Direct-response GP: decreasing grid intervals in the test window,146/196,146/196
+3.4,"Direct-response GP, Wando-Mingug: start of the largest decline, age (d)",218.24489795918367,218
+3.4,"Direct-response GP, Wando-Mingug: start of the largest decline, predicted weight (g)",6.059044115002448,6.06
+3.4,"Direct-response GP, Wando-Mingug: end of the largest decline, age (d)",278.0,278
+3.4,"Direct-response GP, Wando-Mingug: end of the largest decline, predicted weight (g)",4.0844724748275905,4.08
+3.4,"Direct-response GP, Wando-Mingug: decline (%)",32.588830889772446,32.6

@@ -1,0 +1,120 @@
+output,item,published,computed,full_precision,passed
+Table 1,Wando-Geumhae | Location,Wando,Wando,,True
+Table 1,Wando-Geumhae | Stocked,17 Feb 2024,17 Feb 2024,,True
+Table 1,Wando-Geumhae | Sampling period (n),Apr–Nov 2024 (8),Apr–Nov 2024 (8),,True
+Table 1,Wando-Geumhae | Individuals/date,30,30,30.0,True
+Table 1,Wando-Mingug | Location,Wando,Wando,,True
+Table 1,Wando-Mingug | Stocked,17 Feb 2024,17 Feb 2024,,True
+Table 1,Wando-Mingug | Sampling period (n),Apr–Nov 2024 (8),Apr–Nov 2024 (8),,True
+Table 1,Wando-Mingug | Individuals/date,30,30,30.0,True
+Table 1,Jindo-Gaban | Location,Jindo,Jindo,,True
+Table 1,Jindo-Gaban | Stocked,10 Mar 2024,10 Mar 2024,,True
+Table 1,Jindo-Gaban | Sampling period (n),Apr–Nov 2024 (8),Apr–Nov 2024 (8),,True
+Table 1,Jindo-Gaban | Individuals/date,30,30,30.0,True
+Table 1,Jindo-Daru | Location,Jindo,Jindo,,True
+Table 1,Jindo-Daru | Stocked,18 Mar 2024,18 Mar 2024,,True
+Table 1,Jindo-Daru | Sampling period (n),Apr–Nov 2024 (8),Apr–Nov 2024 (8),,True
+Table 1,Jindo-Daru | Individuals/date,30,30,30.0,True
+Table 2,Stacking | Weight,—,—,,True
+Table 2,Stacking | RMSE (g),1.6363,1.6363,1.6362553012735674,True
+Table 2,Stacking | MAE (g),1.2852,1.2852,1.2851835379418333,True
+Table 2,Stacking | MAPE (%),14.2875,14.2875,14.287492175164285,True
+Table 2,Stacking | R2_pred,0.9552,0.9552,0.9551635669606744,True
+Table 2,Group-additive SE | Weight,0.4361,0.4361,0.43612064803971534,True
+Table 2,Group-additive SE | RMSE (g),1.6891,1.6891,1.6891324944774484,True
+Table 2,Group-additive SE | MAE (g),1.3807,1.3807,1.3807077012693871,True
+Table 2,Group-additive SE | MAPE (%),15.0548,15.0548,15.054757047490408,True
+Table 2,Group-additive SE | R2_pred,0.9522,0.9522,0.9522188767371431,True
+Table 2,Neural network | Weight,0.4074,0.4074,0.40740794956495174,True
+Table 2,Neural network | RMSE (g),1.8292,1.8292,1.8292396487761973,True
+Table 2,Neural network | MAE (g),1.4622,1.4622,1.4621781481297134,True
+Table 2,Neural network | MAPE (%),16.8381,16.8381,16.838067762995802,True
+Table 2,Neural network | R2_pred,0.9440,0.9440,0.9439636119551519,True
+Table 2,Matérn(ν = 1/2) | Weight,0.1565,0.1565,0.15647140239533291,True
+Table 2,Matérn(ν = 1/2) | RMSE (g),3.7423,3.7423,3.7422952944837102,True
+Table 2,Matérn(ν = 1/2) | MAE (g),2.8679,2.8679,2.8678896966261265,True
+Table 2,Matérn(ν = 1/2) | MAPE (%),27.3997,27.3997,27.39969431339393,True
+Table 2,Matérn(ν = 1/2) | R2_pred,0.7655,0.7655,0.7654664221607912,True
+Table 3,Stacking | Inputs,full,full,,True
+Table 3,Stacking | RMSE (g),1.6363,1.6363,1.6362553012735674,True
+Table 3,Stacking | MAE (g),1.2852,1.2852,1.2851835379418333,True
+Table 3,Stacking | MAPE (%),14.2875,14.2875,14.287492175164285,True
+Table 3,Stacking | R2_pred,0.9552,0.9552,0.9551635669606744,True
+Table 3,von Bertalanffyᵃ | Inputs,day-age,day-age,,True
+Table 3,von Bertalanffyᵃ | RMSE (g),2.5365,2.5365,2.5365070109926178,True
+Table 3,von Bertalanffyᵃ | MAE (g),2.3094,2.3094,2.3093788603365586,True
+Table 3,von Bertalanffyᵃ | MAPE (%),23.2569,23.2569,23.256940298741817,True
+Table 3,von Bertalanffyᵃ | R2_pred,0.8923,0.8923,0.892254024894672,True
+Table 3,Gompertz | Inputs,day-age,day-age,,True
+Table 3,Gompertz | RMSE (g),3.7218,3.7218,3.721813611532655,True
+Table 3,Gompertz | MAE (g),3.4059,3.4059,3.4058973057089235,True
+Table 3,Gompertz | MAPE (%),36.5780,36.5780,36.578000414789834,True
+Table 3,Gompertz | R2_pred,0.7680,0.7680,0.768026614114464,True
+Table 3,Bayesian ridge | Inputs,full,full,,True
+Table 3,Bayesian ridge | RMSE (g),4.8324,4.8324,4.832392686438701,True
+Table 3,Bayesian ridge | MAE (g),3.8225,3.8225,3.8224798789959404,True
+Table 3,Bayesian ridge | MAPE (%),36.1085,36.1085,36.10847415577911,True
+Table 3,Bayesian ridge | R2_pred,0.6089,0.6089,0.6089310291019128,True
+Table 3,Random forest | Inputs,full,full,,True
+Table 3,Random forest | RMSE (g),5.7878,5.7878,5.787806614313701,True
+Table 3,Random forest | MAE (g),5.3725,5.3725,5.37249505418449,True
+Table 3,Random forest | MAPE (%),53.3253,53.3253,53.32528248955589,True
+Table 3,Random forest | R2_pred,0.4390,0.4390,0.43900764184773966,True
+Table 3,XGBoost | Inputs,full,full,,True
+Table 3,XGBoost | RMSE (g),5.7462,5.7462,5.746232215464893,True
+Table 3,XGBoost | MAE (g),5.1809,5.1809,5.180855702378167,True
+Table 3,XGBoost | MAPE (%),50.6192,50.6192,50.619178704949604,True
+Table 3,XGBoost | R2_pred,0.4470,0.4470,0.44703802577507745,True
+Table 4,Stacking (all three) | RMSE (g),1.6363,1.6363,1.6362553012735674,True
+Table 4,Stacking (all three) | MAE (g),1.2852,1.2852,1.2851835379418333,True
+Table 4,Stacking (all three) | MAPE (%),14.2875,14.2875,14.287492175164285,True
+Table 4,Stacking (all three) | R2_pred,0.9552,0.9552,0.9551635669606744,True
+Table 4,Without Matérn(ν = 1/2) | RMSE (g),1.6812,1.6812,1.6811679887877722,True
+Table 4,Without Matérn(ν = 1/2) | MAE (g),1.3297,1.3297,1.3297309587359096,True
+Table 4,Without Matérn(ν = 1/2) | MAPE (%),15.3060,15.3060,15.305972422159082,True
+Table 4,Without Matérn(ν = 1/2) | R2_pred,0.9527,0.9527,0.9526684043471499,True
+Table 4,Without group-additive SE | RMSE (g),1.6886,1.6886,1.6885615022460572,True
+Table 4,Without group-additive SE | MAE (g),1.3266,1.3266,1.326606732790442,True
+Table 4,Without group-additive SE | MAPE (%),15.2493,15.2493,15.249300457914739,True
+Table 4,Without group-additive SE | R2_pred,0.9523,0.9523,0.9522511750192293,True
+Table 4,Without neural network | RMSE (g),1.9189,1.9189,1.9188648690759003,True
+Table 4,Without neural network | MAE (g),1.6180,1.6180,1.617971364436508,True
+Table 4,Without neural network | MAPE (%),16.8461,16.8461,16.846063183675238,True
+Table 4,Without neural network | R2_pred,0.9383,0.9383,0.9383379860249065,True
+Table 5,Stacking (proposed) | RMSE (g),1.6363,1.6363,1.6362553012735674,True
+Table 5,Stacking (proposed) | MAE (g),1.2852,1.2852,1.2851835379418333,True
+Table 5,Stacking (proposed) | MAPE (%),14.2875,14.2875,14.287492175164285,True
+Table 5,Stacking (proposed) | R2_pred,0.9552,0.9552,0.9551635669606744,True
+Table 5,Without environmental covariates | RMSE (g),2.2362,2.2362,2.2362319181609847,True
+Table 5,Without environmental covariates | MAE (g),1.8544,1.8544,1.8544347446728031,True
+Table 5,Without environmental covariates | MAPE (%),18.9343,18.9343,18.934346797916433,True
+Table 5,Without environmental covariates | R2_pred,0.9163,0.9163,0.9162542829083119,True
+Table 5,With equal weights | RMSE (g),1.8181,1.8181,1.8180503197859987,True
+Table 5,With equal weights | MAE (g),1.4762,1.4762,1.476223616729997,True
+Table 5,With equal weights | MAPE (%),15.5634,15.5634,15.563449607147714,True
+Table 5,With equal weights | R2_pred,0.9446,0.9446,0.9446470564618792,True
+Table 5,Without the monotone construction | RMSE (g),5.2308,5.2308,5.230758894534151,True
+Table 5,Without the monotone construction | MAE (g),4.8017,4.8017,4.801657874504578,True
+Table 5,Without the monotone construction | MAPE (%),48.5878,48.5878,48.58777410657854,True
+Table 5,Without the monotone construction | R2_pred,0.5418,0.5418,0.5417965802272928,True
+Figure 2,"r(log_weight, DO)",-0.041,-0.041,-0.04104627901829609,True
+Figure 2,"r(log_weight, Temperature)",0.259,0.259,0.25934588033109796,True
+Figure 2,"r(log_weight, Salinity)",0.442,0.442,0.4422877729730488,True
+Figure 2,"r(log_weight, pH)",0.197,0.197,0.19722094780739546,True
+Figure 2,"r(DO, Temperature)",-0.622,-0.622,-0.6220176052001647,True
+Figure 2,"r(DO, Salinity)",0.310,0.310,0.3097095530832009,True
+Figure 2,"r(DO, pH)",0.465,0.465,0.4650131976156948,True
+Figure 2,"r(Temperature, Salinity)",-0.281,-0.281,-0.2806423730615218,True
+Figure 2,"r(Temperature, pH)",-0.365,-0.365,-0.36506228949831065,True
+Figure 2,"r(Salinity, pH)",0.847,0.847,0.847400135872179,True
+Figure 4,Matérn(ν = 1/2) | Shapiro-Wilk W,0.964,0.964,0.9644440603740734,True
+Figure 4,Matérn(ν = 1/2) | Shapiro-Wilk p,0.534,0.534,0.5339352334559722,True
+Figure 4,Group-additive SE | Shapiro-Wilk W,0.956,0.956,0.9561135950128692,True
+Figure 4,Group-additive SE | Shapiro-Wilk p,0.365,0.365,0.36541130095683877,True
+Figure 4,Neural network | Shapiro-Wilk W,0.950,0.950,0.9499330569155073,True
+Figure 4,Neural network | Shapiro-Wilk p,0.270,0.270,0.2700444687304884,True
+Figure 5,native 80% mean width (g),6.5722,6.5722,6.572218479278382,True
+Figure 5,residual-calibrated 80% mean width (g),4.8244,4.8244,4.824358844526678,True
+Figure 5,mean width reduction (%),26.6,26.6,26.594667238506286,True
+Figure 5,native 80% coverage,8/8,8/8,,True
+Figure 5,residual-calibrated 80% coverage,7/8,7/8,,True

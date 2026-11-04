@@ -1,0 +1,13 @@
+table,comparison,left,right,byte_identical,columns_match,row_count_match,row_order_match,string_mismatches,number_mismatches,max_abs_difference,passed
+Table 1,written CSV vs table builder,results/tables/Table1_facilities.csv,PaperRun.table(1),False,True,True,True,0,0,0.0,True
+Table 2,written CSV vs table builder,results/tables/Table2_component_gp.csv,PaperRun.table(2),False,True,True,True,0,0,0.0,True
+Table 3,written CSV vs table builder,results/tables/Table3_comparators.csv,PaperRun.table(3),False,True,True,True,0,0,0.0,True
+Table 4,written CSV vs table builder,results/tables/Table4_kernel_ablation.csv,PaperRun.table(4),False,True,True,True,0,0,0.0,True
+Table 5,written CSV vs table builder,results/tables/Table5_framework_variants.csv,PaperRun.table(5),False,True,True,True,0,0,0.0,True
+Section 3,written CSV vs text builder,results/text/Section3_values.csv,PaperRun.text(3),False,True,True,True,0,0,0.0,True
+Table 1,Table1.py (separate process) vs reproduce_all.py,results/tables/Table1_facilities.csv,scripts/tables/Table1.py -> <temporary folder>/Table1_facilities.csv,True,True,True,True,0,0,0.0,True
+Table 2,Table2.py (separate process) vs reproduce_all.py,results/tables/Table2_component_gp.csv,scripts/tables/Table2.py -> <temporary folder>/Table2_component_gp.csv,True,True,True,True,0,0,0.0,True
+Table 3,Table3.py (separate process) vs reproduce_all.py,results/tables/Table3_comparators.csv,scripts/tables/Table3.py -> <temporary folder>/Table3_comparators.csv,True,True,True,True,0,0,0.0,True
+Table 4,Table4.py (separate process) vs reproduce_all.py,results/tables/Table4_kernel_ablation.csv,scripts/tables/Table4.py -> <temporary folder>/Table4_kernel_ablation.csv,True,True,True,True,0,0,0.0,True
+Table 5,Table5.py (separate process) vs reproduce_all.py,results/tables/Table5_framework_variants.csv,scripts/tables/Table5.py -> <temporary folder>/Table5_framework_variants.csv,True,True,True,True,0,0,0.0,True
+Section 3,Section3.py (separate process) vs reproduce_all.py,results/text/Section3_values.csv,scripts/text/Section3.py -> <temporary folder>/Section3_values.csv,True,True,True,True,0,0,0.0,True

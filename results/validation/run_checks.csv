@@ -1,0 +1,42 @@
+check,expected,observed,passed
+abalone_median.py SHA-256 before the run,91ae5a6beebf89815ad638ac26f4ec86ebc214684a67dd1326bb5a24051408fb,91ae5a6beebf89815ad638ac26f4ec86ebc214684a67dd1326bb5a24051408fb,True
+abalone_median.py SHA-256 after the run,91ae5a6beebf89815ad638ac26f4ec86ebc214684a67dd1326bb5a24051408fb,91ae5a6beebf89815ad638ac26f4ec86ebc214684a67dd1326bb5a24051408fb,True
+fit stages entered for Table 1,none,none,True
+numbered outputs present,18 files,all present,True
+version python,,3.12.16,True
+version numpy,,2.5.4,True
+version pandas,,3.1.0,True
+version scipy,,1.18.1,True
+version sklearn,,1.9.1,True
+version matplotlib,,3.11.2,True
+version seaborn,,0.13.2,True
+version torch,,2.5.1+cpu,True
+version gpytorch,,1.15.2,True
+version xgboost,,3.4.1,True
+scripts/figures/Figure1.py exits 0 (run outside the repository),0,0,True
+scripts/figures/Figure1.py runs no GP fit stage,False,False,True
+scripts/figures/Figure2.py exits 0 (run outside the repository),0,0,True
+scripts/figures/Figure2.py runs no GP fit stage,False,False,True
+scripts/figures/Figure3.py exits 0 (run outside the repository),0,0,True
+scripts/figures/Figure3.py runs no GP fit stage,False,False,True
+scripts/figures/Figure4.py exits 0 (run outside the repository),0,0,True
+scripts/figures/Figure4.py reuses checkpoints (no new fit),False,False,True
+scripts/figures/Figure5.py exits 0 (run outside the repository),0,0,True
+scripts/figures/Figure5.py reuses checkpoints (no new fit),False,False,True
+scripts/figures/Figure6.py exits 0 (run outside the repository),0,0,True
+scripts/figures/Figure6.py reuses checkpoints (no new fit),False,False,True
+scripts/tables/Table1.py exits 0 (run outside the repository),0,0,True
+scripts/tables/Table1.py runs no GP fit stage,False,False,True
+scripts/tables/Table2.py exits 0 (run outside the repository),0,0,True
+scripts/tables/Table2.py reuses checkpoints (no new fit),False,False,True
+scripts/tables/Table3.py exits 0 (run outside the repository),0,0,True
+scripts/tables/Table3.py reuses checkpoints (no new fit),False,False,True
+scripts/tables/Table4.py exits 0 (run outside the repository),0,0,True
+scripts/tables/Table4.py reuses checkpoints (no new fit),False,False,True
+scripts/tables/Table5.py exits 0 (run outside the repository),0,0,True
+scripts/tables/Table5.py reuses checkpoints (no new fit),False,False,True
+scripts/text/Section3.py exits 0 (run outside the repository),0,0,True
+scripts/text/Section3.py reuses checkpoints (no new fit),False,False,True
+checkpoint fits.jsonl: SHA-256 at start / at end (changes only when fits are added),4171094844fdc34cf085ec92e58291455816e6ea02288da01ba977d53c3cfc62,unchanged,True
+checkpoint ablation_fits.jsonl: SHA-256 at start / at end (changes only when fits are added),5cbed0ea0458ddb1411c7b33070cd7f77132d99e120824770bee03e7ae6f484f,unchanged,True
+checkpoint abalone_median_states.jsonl: SHA-256 at start / at end (changes only when fits are added),3b1215baef0b2e059eb6e0c4c0248242a4d1c3505317ff62344e3a3a682d602d,unchanged,True

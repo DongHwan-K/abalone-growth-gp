@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying manuscript and this software release."
+title: "Code for Nursery Growth Prediction of Pacific Abalone Using Stacked Monotone Gaussian Processes"
+type: software
+version: 1.0.0
+date-released: 2026-10-27
+license: MIT
+repository-code: "https://github.com/527hohohaha-cmyk/abalone-growth-gp"
+url: "https://github.com/527hohohaha-cmyk/abalone-growth-gp"
+authors:
+  - family-names: Park
+    given-names: Won
+  - family-names: Kim
+    given-names: Donghwan
+  - family-names: Park
+    given-names: Seonghyeok
+  - family-names: Seo
+    given-names: Seung-Won
+  - family-names: Jung
+    given-names: Ho-Jin
+  - family-names: Jang
+    given-names: Hyun-Seok
+  - family-names: Ro
+    given-names: Hyunju
+  - family-names: Lim
+    given-names: Han-Kyu
+  - family-names: Jo
+    given-names: Seongil
+preferred-citation:
+  type: article
+  title: "Nursery Growth Prediction of Pacific Abalone Using Stacked Monotone Gaussian Processes with Residual-Calibrated Prediction Intervals"
+  year: 2026
+  authors:
+    - family-names: Park
+      given-names: Won
+    - family-names: Kim
+      given-names: Donghwan
+    - family-names: Park
+      given-names: Seonghyeok
+    - family-names: Seo
+      given-names: Seung-Won
+    - family-names: Jung
+      given-names: Ho-Jin
+    - family-names: Jang
+      given-names: Hyun-Seok
+    - family-names: Ro
+      given-names: Hyunju
+    - family-names: Lim
+      given-names: Han-Kyu
+    - family-names: Jo
+      given-names: Seongil
