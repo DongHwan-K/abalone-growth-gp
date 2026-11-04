@@ -1,0 +1,32 @@
+# Private input data
+*.xlsx
+*.xls
+input_data/*
+!input_data/README.md
+!input_data/.gitkeep
+!input_data/전복데이터.xlsx
+!input_data/전복 4개세트통합데이터.xlsx
+
+# Generated analysis output and checkpoints
+abalone_paper_results/
+_checkpoints_S*/
+abalone_paper_package_*.zip
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Environments and editor files
+.venv/
+venv/
+.env
+.DS_Store
+.Rhistory
+.vscode/
+.idea/
+
+# Matplotlib cache
+.matplotlib/
