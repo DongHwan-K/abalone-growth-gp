@@ -1,0 +1,75 @@
+name: Validate release
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lightweight-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile the analysis source and the reproduction scripts
+        run: |
+          python -m py_compile abalone_median.py reproduce_all.py \
+            scripts/paper_outputs.py scripts/eda_common.py scripts/check_release.py \
+            scripts/figures/Figure*.py scripts/tables/Table*.py scripts/text/Section*.py
+      - name: Check release files, links, manifest and checksums
+        run: python scripts/check_release.py
+
+  full-example-analysis:
+    name: Full example analysis (GP fits, figures and tables)
+    needs: lightweight-checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.16"
+          cache: pip
+      - name: Install recorded requirements and CPU PyTorch
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -r requirements.txt pypdf
+          python -m pip check
+      - name: Restore checkpoints for these inputs and analysis scripts
+        id: checkpoints
+        uses: actions/cache/restore@v4
+        with:
+          path: abalone_paper_results/example/
+          key: ${{ runner.os }}-python3.12.16-example-${{ hashFiles('abalone_median.py', 'requirements.txt', 'scripts/paper_outputs.py', 'input_data/*.xlsx') }}
+      - name: Validate Excel inputs and regenerate all figures, tables and text values
+        run: python -u reproduce_all.py --example --workers 2
+      - name: Verify released inputs, source and results remain unchanged
+        run: |
+          python scripts/check_release.py
+          git diff --exit-code -- abalone_median.py results/ input_data/ requirements.txt environment.yml
+      - name: Save completed fits for resuming the same example
+        if: always() && steps.checkpoints.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: abalone_paper_results/example/
+          key: ${{ steps.checkpoints.outputs.cache-primary-key }}
+      - name: Upload example outputs and verification records
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-example-results
+          path: |
+            abalone_paper_results/example/*/results/
+            abalone_paper_results/example/*/example_inputs.json
+          if-no-files-found: warn
